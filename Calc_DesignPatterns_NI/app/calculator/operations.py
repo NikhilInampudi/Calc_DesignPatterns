@@ -11,5 +11,5 @@ def multiply(a: Decimal, b: Decimal) -> Decimal:
 
 def divide(a: Decimal, b: Decimal) -> Decimal:
     if b == 0:
-        raise ValueError("Cannot divide by zero")
+        raise ValueError("Unable to divide by 0")
     return a / b
