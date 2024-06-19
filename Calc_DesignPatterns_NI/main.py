@@ -34,9 +34,8 @@ def calculate_and_print(a, b, operation_name):
 
 def main():
     if len(sys.argv) == 1:
-        # If no command-line arguments are provided, start the App
-        app_instance = App()  # Create an instance of the App class
-        app_instance.start()  # Call the start method of the instance
+        app_instance = App()  
+        app_instance.start()  
     elif len(sys.argv) == 4:
         # If three command-line arguments are provided, proceed with calculation
         _, a, b, operation_name = sys.argv
