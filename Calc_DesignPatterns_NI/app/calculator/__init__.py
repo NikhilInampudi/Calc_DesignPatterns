@@ -1,5 +1,3 @@
-
-
 from app.calculator.calculations import Calculations  
 from app.calculator.operations import add, subtract, multiply, divide  
 from app.calculator.calculation import Calculation 
