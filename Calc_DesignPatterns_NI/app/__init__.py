@@ -12,11 +12,10 @@ import os
 class App:
     def __init__(self):
         load_dotenv()
-        self.settings = {}  # Initialize settings as an empty dictionary
-        # Load all environment variables into settings
+        self.settings = {}  
         for key, value in os.environ.items():
             self.settings[key] = value
-        # Default to 'PRODUCTION' if 'ENVIRONMENT' not set
+        
         self.settings.setdefault('ENVIRONMENT', 'TESTING')   
         self.command_handler = CommandHandler()
     def get_environment_variable(self, env_var: str = 'ENVIRONMENT'):

@@ -37,7 +37,7 @@ def main():
         app_instance = App()  
         app_instance.start()  
     elif len(sys.argv) == 4:
-        # If three command-line arguments are provided, proceed with calculation
+        
         _, a, b, operation_name = sys.argv
         calculate_and_print(a, b, operation_name)
     else:

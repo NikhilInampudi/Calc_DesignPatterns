@@ -43,7 +43,7 @@ def test_app_start_exit_command(capfd, monkeypatch):
     with pytest.raises(SystemExit) as exc_info:
         app.start()
     assert exc_info.type == SystemExit
-    assert str(exc_info.value) == "Exiting..."
+    assert str(exc_info.value) == "Exiting."
 
 def test_app_start_unknown_command(capfd, monkeypatch):
     """Test how the REPL handles an unknown command before exiting."""
@@ -53,4 +53,4 @@ def test_app_start_unknown_command(capfd, monkeypatch):
     with pytest.raises(SystemExit) as exc_info:
         app.start()
     assert exc_info.type == SystemExit
-    assert str(exc_info.value) == "Exiting..."
+    assert str(exc_info.value) == "Exiting."

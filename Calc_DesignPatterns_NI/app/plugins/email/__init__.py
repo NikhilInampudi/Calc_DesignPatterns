@@ -4,4 +4,4 @@ from app.commands import Command
 
 class EmailCommand(Command):
     def execute(self):
-        print(f'I will email you')
+        print(f'An email will be sent to you')
